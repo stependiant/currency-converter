@@ -23,7 +23,7 @@ public class ConversionController {
     public ConversionResult convert(
             @RequestParam String from,
             @RequestParam String to,
-            @RequestParam double amount
+            @RequestParam(required = false, defaultValue = "1") double amount
     ) {
         return conversionService.convert(from, to, amount);
     }
