@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: currency-rate
+
+freecurrencyapi:
+  key: <>
+server:
+  port: 9191
